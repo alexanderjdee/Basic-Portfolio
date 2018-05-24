@@ -1,6 +1,55 @@
-h1.nameHeader{
+*{
+    box-sizing: border-box;
+}
+
+.headingWrapper{
+    width: 960px;
+    padding: 0px 5px 0px 20px;
+    margin: 0 auto;
+}
+
+.contentWrapper{
+    width: 960px;
+    padding: 40px 20px 20px 20px;
+    margin: 0px auto;
+}
+
+h1.nameHeading{
     background: #4aaaa5;
     color: #ffffff;
+    width: 200px;
+    height: 70px;
+    float: left;
+    text-align: center;
+    line-height: 70px;
+    font-size: 1.75em;
+    font-weight: bold;
+}
+
+h1.pageTitle{
+    font-size: 1.75em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: #eee solid;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0px;
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+li{
+    float: right;
+}
+
+li a{
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
 }
 
 h1,
@@ -8,10 +57,37 @@ h2,
 h3,
 h4,
 h5{
-    font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
+td{
+    width: 320px;
+    height: 150px;
+}
+
+td img{
+    width: 80%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    z-index: 1;
+}
+
+h3{
+    background-color: #4aaaa5;
+    color: #ffffff;
+    height: 45px;
+    width: 80%;
+    padding-top: 5px;
+    text-align: center;
+    position: relative;
+    top: -60px;
+    z-index: 2;
+}
+
+a,
 p,
 li,
 form{
@@ -22,14 +98,52 @@ form{
 header{
     background: #ffffff;
     border: #cccccc;
+    height: 70px;
 }
 
 footer{
     background: #666666;
     border-top: 10px solid #4aaaa5;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+
+footer p{
+    text-align: center;
+    padding-top: 45px;
+    color: #eee;
+    font-size: small;
+}
+
+body{
+    background: #eee;
 }
 
 .mainContent{
     background: #ffffff;
     border: #dddddd;
+    padding: 35px 25px 35px 25px;
+    font-size: larger;
+    line-height: 30px;
 }
+
+#aboutmeParagraph p{
+    padding-bottom: 15px;
+}
+
+#aboutmeParagraph img{
+    height: 175px;
+    width: 175px;
+    float: left;
+    margin-right: 20px;
+}
+
+input[type=submit]{
+    background: #4aaaa5;
+    color: #ffffff;
+    height: 35px;
+    width: 85px;
+}
+
